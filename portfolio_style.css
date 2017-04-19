@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 1200px) {
 	.content-section {
-		padding-top: 160px;
+		padding-top: 245px;
 	}
 	.content-section h1:after {
 		padding-top: 7px;
@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--- HOME ---*/
 #home {
 	background: url('background.jpg')
-		no-repeat center center fixed;
+		no-repeat top center fixed;
 	background-size: cover;
 	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
 	text-align: center;
