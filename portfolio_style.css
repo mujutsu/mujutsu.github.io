@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--- HOME ---*/
 #home {
 	background: url('background.jpg')
-		no-repeat center center fixed;
+		no-repeat center center fixed;		
 	background-size: cover;
 	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
 	text-align: center;
@@ -246,12 +246,13 @@ h1, h2, h3, h4, h5, h6 {
 /*--- PORTFOLIO ---*/
 .content-section .thumbnail {
 	position: relative;
-	overflow: hidden;
 	cursor: pointer;
-}
-
-.content-section .thumbnail * {
-	transition: all .25s;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
 }
 
 .content-section .thumbnail h4 {
@@ -263,45 +264,12 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 24px;
 }
 
-.content-section .thumbnail:hover h4, .content-section .thumbnail:hover p
-	{
-	color: #AFAFAF;
-}
-
-.content-section .thumbnail:hover img {
-	opacity: 0.25;
-}
-
-.content-section .thumbnail:after {
-	font-family: 'FontAwesome';
-	content: '\f121';
-	color: #FFF;
-	font-size: 48px;
-	line-height: 80px;
-	top: 70%;
-	position: absolute;
-	text-align: center;
-	display: inline-block;
-	width: 100%;
-	transition: all .35s;
-	opacity: 0;
-	width: 86px;
-	height: 86px;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	border-radius: 50%;
-	background: transparent;
-	border: 3px solid transparent;
-}
-
-.content-section .thumbnail:hover:after {
-	top: 25%;
-	opacity: 1;
-	color: #FFFFFF;
-	background: #AF6204;
-	border: 3px solid #FFFFFF;
+.content-section .thumbnail:hover {
+	overflow: hidden;
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 /*--- CONTACT ---*/
