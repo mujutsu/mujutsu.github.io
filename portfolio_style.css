@@ -95,6 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-bottom-color: #DFDFDF;
 	height: 60px;
 	margin-bottom: 0;
+	
 }
 
 .navbar-header .navbar-toggle {
@@ -124,6 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-default .navbar-nav>li>a {
 	color: #222;
 	padding: 10px;
+	font-size: 24px;
 }
 
 .navbar-default .navbar-nav>li>a.selected {
@@ -150,6 +152,7 @@ h1, h2, h3, h4, h5, h6 {
 	}	
 	.navbar-default .navbar-nav>li>a {
 		padding: 20px 20px 9px 0;
+		font-size: 18px;
 	}
 	.navbar-default .navbar-nav>li>a:hover {
 		background-color: transparent;
@@ -168,6 +171,7 @@ h1, h2, h3, h4, h5, h6 {
 	}	
 	.navbar-default .navbar-nav>li>a {
 		padding: 20px 25px 9px 0;
+		font-size: 18px;
 	}
 	.navbar-default .navbar-nav>li>a:hover {
 		background-color: transparent;
