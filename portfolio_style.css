@@ -95,8 +95,6 @@ h1, h2, h3, h4, h5, h6 {
 	border-bottom-color: #DFDFDF;
 	height: 60px;
 	margin-bottom: 0;
-	text-align: right;
-	
 }
 
 .navbar-header .navbar-toggle {
@@ -126,6 +124,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-default .navbar-nav>li>a {
 	color: #222;
 	padding: 10px;
+	text-align: right;
+	font-size: 18px;
 }
 
 .navbar-default .navbar-nav>li>a.selected {
