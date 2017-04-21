@@ -51,9 +51,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<br>
-					<br>
-					<br>
+					<br> <br> <br>
 					<h1>mujutsu</h1>
 					<h5>the dentist who became a programmer</h5>
 				</div>
@@ -69,38 +67,49 @@
 				<div class="col-sm-8 col-lg-7">
 					<h1>about me</h1>
 					<p class="lead">This is my story so far.</p>
-					<p>
-					Hello, My name is Chris.
-					</p>
-					<p>
-					 After working for a few years as a	dentist I fully dedicated myself to my childhood passion: programming.
-					</p>
+					<p>Hello, My name is Chris.</p>
+					<p>After working for a few years as a dentist I fully dedicated
+						myself to my childhood passion: programming.</p>
 					<ul>
-					<li><p>
-					I started off with the amazing online courses of John, from <strong><a href="https://www.caveofprogramming.com">Cave of Programing.</a></strong> They were immensly helpful as a beginner.
-					</p>
-					</li>
-					<li><p>
-					After this I attended an intensive <strong><a href="https://www.jademy.ro/cursuri/java-coding-bootcamp/">Java Training Boootcamp</a></strong> at <strong><a href="https://www.jademy.ro/">Jademy</a></strong>, an Oracle certified training center.
-					</p>
-					<p>
-					Every day for two months I learned Java, Java EE and many other things that you'll find on my <strong><a href=https://www.linkedin.com/in/cristian-demetrescu-818796140/>LinkedIn profile</a></strong> or in my CV (available upon request).
-					</p>
-					</li>
-					<li><p>
-					Currently I'm following a Full Stack Programming course at freeCodeCamp. You can check out my progress <strong><a href="https://www.freecodecamp.com/mujuthejuju">here</a></strong>.
-					</p>
-					</li>
-					<li><p>
-					At the same time I'm following <strong><a href="https://www.caveofprogramming.com">John's</a></strong> advanced Spring and Spring Boot courses.
-					</p>
-					</li>
+						<li><p>
+								I started off with the amazing online courses of John, from <strong><a
+									href="https://www.caveofprogramming.com">Cave of
+										Programing.</a></strong> They were immensly helpful as a beginner.
+							</p></li>
+						<li><p>
+								After this I attended an intensive <strong><a
+									href="https://www.jademy.ro/cursuri/java-coding-bootcamp/">Java
+										Training Boootcamp</a></strong> at <strong><a
+									href="https://www.jademy.ro/">Jademy</a></strong>, an Oracle certified
+								training center.
+							</p>
+							<p>
+								Every day for two months I learned Java, Java EE and many other
+								things that you'll find on my <strong><a
+									href=https://www.linkedin.com/in/cristian-demetrescu-818796140 />LinkedIn
+									profile</a></strong> or in my CV (available upon request).
+							</p></li>
+						<li><p>
+								Currently I'm following a Full Stack Programming course at
+								freeCodeCamp. You can check out my progress <strong><a
+									href="https://www.freecodecamp.com/mujuthejuju">here</a></strong>.
+							</p></li>
+						<li><p>
+								At the same time I'm following <strong><a
+									href="https://www.caveofprogramming.com">John's</a></strong> advanced
+								Spring and Spring Boot courses.
+							</p></li>
 					</ul>
 					<p>
-					I'm available for a full time job as a Junior Java Developer starting April, so if you find my profile interesting send me a message. You can find my contact info <strong><a href="#contact" class="scroll">here</a></strong>.
+						I'm available for a full time job as a Junior Java Developer
+						starting April, so if you find my profile interesting send me a
+						message. You can find my contact info <strong><a
+							href="#contact" class="scroll">here</a></strong>.
 					</p>
 					<p>
-					Keep checking back this page, as I'm always adding new projects to the <strong><a href="#portfolio" class="scroll">portfolio</a></strong> section.
+						Keep checking back this page, as I'm always adding new projects to
+						the <strong><a href="#portfolio" class="scroll">portfolio</a></strong>
+						section.
 					</p>
 				</div>
 				<div class="col-sm-4 col-lg-5 hidden-xs">
@@ -128,7 +137,8 @@
 						</a>
 						<div class="caption">
 							<h4>Freddie Mercury tribute page</h4>
-							<p>My first freeCodeCamp project, a tribute page to Freddie Mercury</p>
+							<p>My first freeCodeCamp project, a tribute page to Freddie
+								Mercury</p>
 						</div>
 					</div>
 				</div>
@@ -191,8 +201,8 @@
 									href="https://www.linkedin.com/in/cristian-demetrescu-818796140/"
 									role="button" target="_blank"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
 								<a class="btn btn-default btn-lg twitter-btn"
-									href="http://www.google.com/recaptcha/mailhide/d?k=01fc93dAIO0-o94oYF6R_j4A==&c=LqkUVWWyGSj751xmZV72cLGfkVw5mQ7dqXOppHd3eAU=" role="button"
-									target="_blank"><i class="fa fa-envelope"></i><span>Email</span></a>
+									href="http://www.google.com/recaptcha/mailhide/d?k=01fc93dAIO0-o94oYF6R_j4A==&c=LqkUVWWyGSj751xmZV72cLGfkVw5mQ7dqXOppHd3eAU="
+									role="button" target="_blank"><i class="fa fa-envelope"></i><span>Email</span></a>
 								<a class="btn btn-default btn-lg github-btn"
 									href="https://github.com/mujutsu" role="button" target="_blank"><i
 									class="fa fa-github"></i><span>GitHub</span></a> <a
@@ -223,11 +233,14 @@
 				$('.navbar-default a').removeClass('selected');
 				$(this).addClass('selected');
 			});
-			$(document).on('click','.navbar-collapse.in',function(e) {
-			    if( $(e.target).is('a') ) {
-			        $(this).collapse('hide');
-			    }
-			});
+		});
+		$(document).click(function (event) {
+		    var clickover = $(event.target);
+		    var $navbar = $(".navbar-collapse");               
+		    var _opened = $navbar.hasClass("in");
+		    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+		        $navbar.collapse('hide');
+		    }
 		});
 	</script>
 </body>
